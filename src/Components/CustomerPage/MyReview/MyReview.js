@@ -16,7 +16,7 @@ const MyReview = () => {
         formData.append('company',info.company)
         formData.append('review',info.review)
         
-        fetch("http://localhost:5000/addReview",{
+        fetch("https://radiant-wildwood-03529.herokuapp.com/addReview",{
             method: 'POST',
             body: formData
         })

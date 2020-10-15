@@ -13,7 +13,7 @@ const AddService = () => {
         const formData = new FormData();
         formData.append('email',info.email);        
         
-        fetch("http://localhost:5000/addAdmin",{
+        fetch("https://radiant-wildwood-03529.herokuapp.com/addAdmin",{
             method: 'POST',
             body: formData
         })

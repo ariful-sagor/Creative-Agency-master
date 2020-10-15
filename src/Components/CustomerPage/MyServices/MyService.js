@@ -19,7 +19,7 @@ const MyService = (props) => {
                                 {
                                     order.image ? <img style={{height: '60px'}} src={`data:image/png;base64,${order.image.img}`}/>
                                         :
-                                        <img style={{height: '60px'}} className="img-fluid mb-3" src={`http://localhost:5000/orders/${order.img}`} alt=""/>
+                                        <img style={{height: '60px'}} className="img-fluid mb-3" src={`https://radiant-wildwood-03529.herokuapp.com/orders/${order.img}`} alt=""/>
                                 }                                                           
                                 </div>                                         
                                 <h5><strong>{order.service}</strong></h5>

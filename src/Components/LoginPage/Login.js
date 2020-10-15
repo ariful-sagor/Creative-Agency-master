@@ -1,13 +1,25 @@
-import React, {useContext} from 'react';
-import './Login.css';
-import * as firebase from "firebase/app";
+// import React, {useContext} from 'react';
+// import './Login.css';
+// import * as firebase from "firebase/app";
+// import "firebase/auth";
+// import { UserContext } from '../../App';
+// import { Link, useHistory, useLocation } from 'react-router-dom';
+
+
+// import { Form } from 'react-bootstrap';
+// import firebaseConfig from './firebase.config';
+
+import React, { useContext } from 'react';
+import * as firebase from 'firebase/app';
 import "firebase/auth";
-import { UserContext } from '../../App';
-import { Link, useHistory, useLocation } from 'react-router-dom';
-import googleLogo from '../../Images/googleLogo.png';
-import logo from '../../Images/logo.png';
 import { Form } from 'react-bootstrap';
+import { Link, useHistory, useLocation } from 'react-router-dom';
+import logo from '../../Images/logo.png';
+import './Login.css'
+import {UserContext} from '../../App'
 import firebaseConfig from './firebase.config';
+import googleLogo from '../../Images/googleLogo.png';
+    
 
 firebase.initializeApp(firebaseConfig);
 
@@ -15,8 +27,8 @@ firebase.initializeApp(firebaseConfig);
 const Login = () => {
     const history= useHistory();
     const location= useLocation();
-    const { from } = location.state || { from: { pathname: "/customer" } };
-
+    const { from } = location.state || { from: { pathname: "/" } };
+    
 
     if(firebase.apps.length=== 0){
         firebase.initializeApp(firebaseConfig);
@@ -27,20 +39,15 @@ const Login = () => {
     const handleGoogleLogin = () => {
         firebase.auth().signInWithPopup(googleProvider)
         .then(res=>{
-            console.log(res.user)
             const {displayName, email}= res.user;
             const signedInUser=  {name: displayName, email};
             setLoggedInUser(signedInUser);
             history.push('/');
-            console.log(signedInUser)
-            
         }).catch(function(error) {
             
           });
-          console.log(loggedInUser)
-          
 
-    }  
+    }
     
     return (
         <div>
