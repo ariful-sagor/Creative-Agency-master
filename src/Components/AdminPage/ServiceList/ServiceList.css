@@ -1,0 +1,38 @@
+.servicelist-table{
+    margin: 20px 20px;
+    padding: 30px ;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+thead{
+    background-color: #F5F6FA;
+   
+}
+
+thead th{
+    font-weight: 400;
+    font-size: 16px ;
+    color: #686868 ;
+}
+
+.input-group{
+    width: 40% ;
+    margin: 0 auto ;
+}
+
+.custom-select{
+    border: none ;
+}
+
+.red{
+    color: #FF4545;
+}
+
+.green{
+    color: #009444;
+}
+
+.yellow{
+    color: #FFBD3E;
+}
