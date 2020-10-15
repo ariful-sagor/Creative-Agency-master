@@ -8,7 +8,6 @@ const MyReview = () => {
         const newInfo ={...info};
         newInfo[e.target.name]= e.target.value;
         setInfo(newInfo);
-        console.log(newInfo);
     }
     const handleSubmit = () => {
         const formData = new FormData();

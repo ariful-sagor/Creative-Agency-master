@@ -11,8 +11,7 @@ const ServiceList = () => {
             setOrders(data);
         })
     }, [])
-    console.log(orders);
-
+    
     const [serviceStatus, setServiceStatus] = useState('Pending');
 
     const handleChange = e => setServiceStatus(e.target.value);

@@ -9,7 +9,7 @@ import Sidebar from './Sidebar';
 
 const CustomerPage = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
-    const [display, setDisplay] = useState()
+    const [display, setDisplay] = useState();
 
     return (
         <section id="customer">

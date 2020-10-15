@@ -17,8 +17,8 @@ thead th{
 }
 
 .input-group{
-    width: 40% ;
-    margin: 0 auto ;
+    width: 100% ;
+    margin: 0 30px;
 }
 
 .custom-select{

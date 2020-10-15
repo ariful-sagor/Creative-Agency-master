@@ -6,8 +6,7 @@ const AddService = () => {
     const handleBlur= e =>{
         const newInfo ={...info};
         newInfo[e.target.name]= e.target.value;
-        setInfo(newInfo);
-        console.log(newInfo);
+        setInfo(newInfo);        
     }
     const handleSubmit = () => {
         const formData = new FormData();

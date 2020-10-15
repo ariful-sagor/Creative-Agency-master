@@ -11,7 +11,6 @@ const MyServices = () => {
             setOrders(data);
         })
     }, [])
-    console.log(orders);
 
     return (
         <section id="myServices" className="p-4">

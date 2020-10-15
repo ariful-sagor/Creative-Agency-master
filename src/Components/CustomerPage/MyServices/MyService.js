@@ -4,9 +4,7 @@ import { UserContext } from '../../../App';
 
 const MyService = (props) => {
     const {order}= props;
-    console.log(props, order );
     const [loggedInUser, setLoggedInUser]= useContext(UserContext)
-    console.log(loggedInUser)
     
     return (
         <div>

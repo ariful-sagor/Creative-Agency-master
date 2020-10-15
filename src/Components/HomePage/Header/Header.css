@@ -1,8 +1,14 @@
 header {
     margin-bottom: -100px;
     background: linear-gradient(175deg, #fbd062 70%, white 70%);
-    min-height: 780px;
+    min-height: 800px;
     
+}
+@media(max-width: 980px) {
+    header {
+        min-height: 800px;
+        margin-bottom: -150px;
+    }
 }
 
 @media(max-width: 780px) {
@@ -11,9 +17,10 @@ header {
         margin-bottom: -200px;
     }
 }
-@media(max-width: 980px) {
+
+@media(max-width: 600px) {
     header {
-        min-height: 700px;
-        margin-bottom: -150px;
+        min-height: 1200px;
+        margin-bottom: -200px;
     }
 }

@@ -22,12 +22,10 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>          
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin></Admin>
-          </Route>
-          {/* <Route path="/customer">
-            <CustomerPage></CustomerPage>
-          </Route> */}         
+            </PrivateRoute>       
+          
           <PrivateRoute path="/customer">
               <CustomerPage />
           </PrivateRoute>
