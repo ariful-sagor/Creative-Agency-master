@@ -1,5 +1,5 @@
 
-A full-stack react based full-stack web application where people can choose services and give feedback which will be shown in the home.
+A full-stack react based web application where people can choose services and give feedback which will be shown in the home.
 
 Features:
 - Select desired course or service.
